@@ -11,7 +11,8 @@ angular.module('video-player')
       this.clicker = (video) => {
         //on click grab video id
         //replace this.video to video 
-        this.video = video;   
+        this.video = video;
+        //work
       };
     }
   
