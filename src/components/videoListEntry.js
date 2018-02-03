@@ -7,6 +7,6 @@ angular.module('video-player')
       clicker: '<'
     },
 	
-	templateUrl: 'src/templates/videoListEntry.html'
+    templateUrl: 'src/templates/videoListEntry.html'
 
   });

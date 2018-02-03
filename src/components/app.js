@@ -3,7 +3,7 @@ angular.module('video-player')
   .component('app', {
     // TODO
     
-    templateUrl: "src/templates/app.html",
+    templateUrl: 'src/templates/app.html',
 
     controller: function() {
       this.videos = window.exampleVideoData;
@@ -13,8 +13,6 @@ angular.module('video-player')
         //replace this.video to video 
         this.video = video;   
       };
-          
-
     }
   
   });
