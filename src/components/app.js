@@ -7,7 +7,7 @@ angular.module('video-player')
 
     controller: function() {
       this.exampleData = window.exampleVideoData;
-      this.video = exampleData[0];
+      this.video = window.exampleVideoData[0];
     }
   
   });
