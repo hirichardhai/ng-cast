@@ -5,7 +5,7 @@ angular.module('video-player')
     
     templateUrl: 'src/templates/app.html',
 
-    controller: function() {
+    controller: function(youTube) {
       this.videos = window.exampleVideoData;
       this.video = window.exampleVideoData[0];
       this.clicker = (video) => {
@@ -16,8 +16,13 @@ angular.module('video-player')
         //work
       };
       this.search = (query) => {
-        // youTube(query);
-      console.log(query);
+        var test = (response) =>{
+
+          this.videos = response.data.items;
+          this.video = response.data.items[0];
+        };
+  
+        youTube.ytQuery(query, test);
       };
     }
   
