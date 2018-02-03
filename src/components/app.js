@@ -11,8 +11,13 @@ angular.module('video-player')
       this.clicker = (video) => {
         //on click grab video id
         //replace this.video to video 
+        console.log('ok');
         this.video = video;
         //work
+      };
+      this.search = (query) => {
+        // youTube(query);
+      console.log(query);
       };
     }
   

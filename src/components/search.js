@@ -7,15 +7,6 @@ angular.module('video-player')
       search: '<'
     },
 
-    controller: function() {
-
-
-      this.search = (query) => {
-        // youTube(query);
-      console.log('clicked');
-      };
-    },
-
     templateUrl: 'src/templates/search.html'
 
   });
